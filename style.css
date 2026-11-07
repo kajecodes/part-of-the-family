@@ -1,0 +1,29 @@
+:root {
+    /* Main palette */
+    --dark-green: #20312B;
+    --cream: #F8F2E8;
+    --warm-white: #FFFDF8;
+    --coral: #F58A71;
+    --yellow: #EDC85D;
+    --mint: #A9D7C5;
+    --forest-green: #214D3E;
+
+    /* Supporting colors */
+    --coral-dark: #d76954;
+    --button-text: #172b25;
+    --eyebrow: #bd5d4b;
+    --body-text: #5c6964;
+    --success-green: #49a279;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--body-text);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark-green);
+}
