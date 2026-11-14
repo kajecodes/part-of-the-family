@@ -1,1 +1,8 @@
 .DS_Store
+.claude-preview/
+
+# Full-size original photos stay on the Mac.
+# The site only uses the smaller copies in images/web.
+images/*
+!images/web/
+images/web/*.jpeg

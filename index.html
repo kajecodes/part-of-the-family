@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap"
         rel="stylesheet">
 
 </head>
@@ -20,62 +20,530 @@
         <nav>
             <a href="#services">Services</a>
             <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
             <a href="#gallery">Gallery</a>
-            <a href="#contact" class="btn">Book Now</a>
+            <a href="https://scritches.io" class="btn" target="_blank" rel="noopener">Book Now</a>
         </nav>
     </header>
     <main>
         <section class="hero">
             <div class="hero-text">
-                <p class="eyebrow">Pet sitting you can trust</p>
-                <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-                <p class="hero-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="eyebrow">Where your pet is part of our family</p>
+                <h1>Welcome to the Family!</h1>
+                <p class="hero-sub">We know it takes trust to leave your dog in someone else&rsquo;s care. Whether they&rsquo;re here for the day or a longer visit, we want your dog to feel at home (free to play and snuggle) and you to feel comfortable knowing they are being cared for as part of our family.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn">Book a visit</a>
+                    <a href="https://scritches.io" class="btn" target="_blank" rel="noopener">Book a visit</a>
                     <a href="#services" class="btn-link">See services</a>
                 </div>
             </div>
-            <div class="hero-image">Image placeholder</div>
+            <div class="hero-art">
+                <img class="hero-image" src="images/web/newhero.jpg" alt="Smiling golden retriever looking up at the camera in the yard">
+            </div>
         </section>
         <section class="strip">
-            <p>Lorem ipsum dolor</p>
-            <p>Sit amet consectetur</p>
-            <p>Adipiscing elit sed</p>
+            <div class="stat">
+                <span class="stat-number">430</span>
+                <span class="stat-label">Bookings completed</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">5.0&nbsp;&#9733;</span>
+                <span class="stat-label">259 ratings</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">47</span>
+                <span class="stat-label">Repeat family members</span>
+            </div>
         </section>
         <section class="services" id="services">
             <div class="section-heading">
                 <p class="eyebrow">Our services</p>
-                <h2>Lorem ipsum dolor sit amet?</h2>
+                <h2>Care that fits your schedule</h2>
             </div>
 
             <div class="cards">
+                <article class="card card-coral">
+                    <img class="card-image" src="images/web/daycare.jpg" alt="White and brown dog playing with a rope toy outside" loading="lazy">
+                    <span class="card-number">01</span>
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" /></svg>
+                        </span>
+                        <h3>Day Care</h3>
+                        <p>A day of play, company, and naps in our home, until it&rsquo;s time to head back to yours.</p>
+                        <div class="card-footer">
+                            <a href="#contact" class="btn-link">Learn more</a>
+                        </div>
+                    </div>
+                </article>
+
                 <article class="card card-yellow">
-                    <div class="card-image">Image</div>
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
-                    <a href="#contact" class="btn-link">Learn more</a>
+                    <img class="card-image" src="images/web/boarding.jpg" alt="Spotted dog cuddling a teddy bear on the couch" loading="lazy">
+                    <span class="card-number">02</span>
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" /></svg>
+                        </span>
+                        <h3>Boarding</h3>
+                        <p>Round-the-clock care in our home, for as many days as you need. All the play and company of Day Care, plus cozy overnights.</p>
+                        <div class="card-footer">
+                            <a href="#contact" class="btn-link">Learn more</a>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="card card-mint">
-                    <div class="card-image">Image</div>
-                    <h3>Dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
-                    <a href="#contact" class="btn-link">Learn more</a>
+                    <img class="card-image" src="images/web/drop-ins.jpg" alt="Black cat lounging on a rug at home" loading="lazy">
+                    <span class="card-number">03</span>
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11.5L12 4l8.5 7.5" /><path d="M6 10v9.5h12V10" /><path d="M10 19.5v-5h4v5" /></svg>
+                        </span>
+                        <h3>Drop-Ins</h3>
+                        <p>30 to 60 minute visits in your home to care for all of your pets&rsquo; needs, plus as much play and affection as we can fit in!</p>
+                        <div class="card-footer">
+                            <a href="#contact" class="btn-link">Learn more</a>
+                        </div>
+                    </div>
                 </article>
+            </div>
+        </section>
+        <section class="story" id="story">
+            <div class="story-card">
+                <img class="story-photo" src="images/web/aboutus.jpg" alt="Our family dressed up in costumes with three dogs in front of our home" loading="lazy">
+                <div class="story-text">
+                    <div class="section-heading">
+                        <p class="eyebrow">How we got started</p>
+                        <h2>From dog walks to Part of the Family</h2>
+                    </div>
+                    <p>Part of the Family began in 2023 with a simple idea from 12-year-old Mylo: earning money by walking neighborhood dogs. That idea grew into a pet care business alongside mom, Kirsten, whose lifelong love of animals made it a natural fit. When Matt&rsquo;s disability brought unexpected changes to our lives, caring for pets offered a new direction filled with purpose and joy. Together, we created a place where your pets are welcomed, cared for, and loved as part of our family.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">Meet the family</p>
+                <h2>The people (and pup) behind the care</h2>
+            </div>
 
-                <article class="card card-white">
-                    <div class="card-image">Image</div>
-                    <h3>Amet consectetur</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
-                    <a href="#contact" class="btn-link">Learn more</a>
-                </article>
+            <div class="family-grid">
+                <div class="family-member">
+                    <img class="family-photo family-photo-kirsten" src="images/web/kirsten.jpg" alt="Kirsten hugging two dogs in the backyard" loading="lazy">
+                    <h3>Kirsten</h3>
+                    <p>Hi! I&rsquo;m Kirsten, the mom behind Part of the Family and the one you&rsquo;ll hear from most for bookings and updates. My promise is to care for your pet the way I&rsquo;d want my own dog, Brixie, to be cared for: patiently, lovingly, and with plenty of snuggles and playtime!</p>
+                </div>
+
+                <div class="family-member">
+                    <img class="family-photo family-photo-mylo" src="images/web/mylo.jpg" alt="Mylo snuggling a big white dog" loading="lazy">
+                    <h3>Mylo</h3>
+                    <p>Heya, I&rsquo;m Mylo! I&rsquo;m the original founder of our business! I&rsquo;ve loved getting to be Pawrt of the Family. (Heh, get it?) I&rsquo;m usually the first one out the door to welcome you and your dog. I&rsquo;m always up for a game of tug or a snuggle on the couch and some kisses!</p>
+                </div>
+
+                <div class="family-member">
+                    <img class="family-photo family-photo-matt" src="images/web/matt.jpg" alt="Matt smiling next to a poodle" loading="lazy">
+                    <h3>Matt</h3>
+                    <p>Matt here. I never expected dogs to become the highlight of my day, but here we are. These guys have such different personalities, and I do try to spoil them rotten. I&rsquo;ve heard a few of them mentioning &ldquo;Treat Dealer&rdquo; and my name in the same sentence.</p>
+                </div>
+
+                <div class="family-member">
+                    <img class="family-photo family-photo-brixie" src="images/web/newbrixie.jpg" alt="Brixie the standard poodle smiling in the backyard" loading="lazy">
+                    <h3>Brixie</h3>
+                    <details class="dog-speak">
+                        <summary>
+                            Woof! Arf-arf! Ruff ruff-ruff, ruff-ruff! Bark bark, woof-awoo! Yip yip woof-woof? Woof woof arf-arf-woof, bark-bark!
+                            <span class="translation-hint hint-open">click for translation</span>
+                            <span class="translation-hint hint-close">click to collapse</span>
+                        </summary>
+                        <p>Hi, I&rsquo;m Brixie! This is my house. Those are my humans. Aren&rsquo;t these toys fun? You&rsquo;re going to love it here!</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="showcase" id="reviews">
+            <div class="section-heading">
+                <p class="eyebrow">Happy tails</p>
+                <h2>What Families Are Saying</h2>
+            </div>
+
+            <div class="carousel">
+                <button class="carousel-arrow carousel-prev" aria-label="Previous">&#10094;</button>
+
+                <div class="carousel-track">
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Another wonderful experience leaving my pups with Kirsten and her family. They come home and pass out from their exciting vacation, and I have peace of mind while I am traveling for work. The best part is when I show up to drop them off and they all bolt into the house excited to be there. It truly is their loving home away from home. Thank you Kirsten, Mylo and Matt!&rdquo;</p>
+                        <p class="reviewer">&mdash; Cydnie C.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Kirsten and her family are true dog lovers. My Fani is treated like family every time, and Kirsten always puts her charges&rsquo; best interests first. As soon as we turn onto their street, Fani starts to cry with excitement, and the second the car stops she&rsquo;s out looking for her BFF Brixie. Thank you, Kirsten.&rdquo;</p>
+                        <p class="reviewer">&mdash; Cindy J.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Kirsten and her family are so awesome! Kody loves staying at their home. We always worry that he&rsquo;ll be too spoiled and not want to come home. On a scale of 1-5, she gets a 10. Communication is always prompt, and the pictures are great!&rdquo;</p>
+                        <p class="reviewer">&mdash; Ellen S.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;I cannot put into words how amazing Kirsten is. Most recently we were out of the country for 14 days, the longest we&rsquo;ve ever left our precious, old girl, Luna. Kirsten made sure we had daily updates and the best pictures the whole time. I would HIGHLY recommend Kirsten to watch your dog. You will not be disappointed.&rdquo;</p>
+                        <p class="reviewer">&mdash; Deanna C.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Kirsten and her family are wonderful doggie sitters. Our dog had great boarding care with lots of love and attention. We got updates every evening but could message her anytime of day. She made sure Mochi was eating and felt comfortable in her home. We will book her again and feel sure recommending her to anyone.&rdquo;</p>
+                        <p class="reviewer">&mdash; Suzie M.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Pippa LOVES being at Kirsten&rsquo;s house! She&rsquo;s always so happy when we pull up&mdash;it&rsquo;s like her home away from home. I know they give Pippa the same love and attention she gets at home, and that makes my heart happy!&rdquo;</p>
+                        <p class="reviewer">&mdash; Jen W.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;We absolutely LOVE having Kirsten and her family watch our dog! She sends numerous updates, spoils her, and just loves on her. We joke that our pup is sad to come home! It&rsquo;s so nice finding someone who loves your pup as their own.&rdquo;</p>
+                        <p class="reviewer">&mdash; Rhiannon O.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Kirsten and Matt are so good with our girls. They understand dogs very well and have such a peaceful, patient demeanor with them. We&rsquo;re thankful to have found them.&rdquo;</p>
+                        <p class="reviewer">&mdash; Donna</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Kirsten is a happy place for Tucker to go. I feel like he&rsquo;s always well taken care of when he&rsquo;s with her and her family. She&rsquo;s always my first choice for day care or boarding.&rdquo;</p>
+                        <p class="reviewer">&mdash; Terry P.</p>
+                    </div>
+                    <div class="carousel-item review-card">
+                        <p class="quote">&ldquo;Enzo is always happy to stay with Kirsten and her family! We don&rsquo;t have to worry about him because we know he&rsquo;s in good hands. They are the best.&rdquo;</p>
+                        <p class="reviewer">&mdash; Jana T.</p>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow carousel-next" aria-label="Next">&#10095;</button>
+            </div>
+        </section>
+        <section class="showcase" id="gallery">
+            <div class="section-heading">
+                <p class="eyebrow">A peek inside</p>
+                <h2>Gallery</h2>
+            </div>
+
+            <div class="moments" id="moments">
+                <figure class="moment moment-1" tabindex="0">
+                    <img src="images/web/img_0537.jpg" alt="Dog in the middle of playtime" loading="lazy">
+                    <figcaption>Playtime is serious business.</figcaption>
+                </figure>
+                <figure class="moment moment-2" tabindex="0">
+                    <img src="images/web/img_2150.jpg" alt="Dog friends hanging out together" loading="lazy">
+                    <figcaption>New friends, properly introduced.</figcaption>
+                </figure>
+                <figure class="moment moment-3" tabindex="0">
+                    <img src="images/web/img_9914.jpg" alt="Dog snuggling with a family member" loading="lazy">
+                    <figcaption>Free to play and snuggle.</figcaption>
+                </figure>
+                <figure class="moment moment-4" tabindex="0">
+                    <img src="images/web/img_3256.jpg" alt="Happy dog smiling at the camera" loading="lazy">
+                    <figcaption>That happy-to-be-here face.</figcaption>
+                </figure>
+            </div>
+
+            <div class="moments-actions">
+                <button type="button" class="btn" id="moments-shuffle">Show me more</button>
+            </div>
+
+            <!-- the big version of a photo. Hidden until someone clicks a photo. -->
+            <div class="moment-zoom" id="moment-zoom" hidden>
+                <figure class="moment moment-big">
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <button type="button" class="moment-zoom-close" aria-label="Close">&times;</button>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Ready to book a visit?</h2>
+            </div>
+
+            <div class="contact-card">
+                <p>Reach out and let&rsquo;s find the right fit for your pup.</p>
+                <div class="contact-links">
+                    <a href="mailto:potfpetcare@gmail.com" class="btn">Email Us</a>
+                    <a href="tel:+18015927691" class="btn-link">Call or text: (801) 592-7691</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="footer-brand">
+            <svg class="footer-paw" viewBox="0 0 64 64" aria-hidden="true">
+                <ellipse cx="13" cy="29" rx="6.5" ry="8.5" transform="rotate(-25 13 29)" />
+                <ellipse cx="26" cy="16" rx="7" ry="9.5" transform="rotate(-8 26 16)" />
+                <ellipse cx="41" cy="16" rx="7" ry="9.5" transform="rotate(10 41 16)" />
+                <ellipse cx="53" cy="30" rx="6.5" ry="8.5" transform="rotate(28 53 30)" />
+                <path d="M33 31c-9 0-17 8-18 16-1 7 4 11 10 10 3-.5 5-1.5 8-1.5s5 1 8 1.5c6 1 11-3 10-10-1-8-9-16-18-16z" />
+            </svg>
+            <div>
+                <span class="footer-name">Part of the Family</span>
+                <span class="footer-tag">Pet Care</span>
+            </div>
+        </div>
+        <p>Serving pets and their people across St. George.</p>
+        <p>&copy; 2026 Part of the Family Pet Care</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.carousel').forEach(function (carousel) {
+            const track = carousel.querySelector('.carousel-track');
+            const prevBtn = carousel.querySelector('.carousel-prev');
+            const nextBtn = carousel.querySelector('.carousel-next');
+
+            function scrollCarousel(direction) {
+                const item = track.querySelector('.carousel-item');
+                const gap = 24;
+                const distance = item.offsetWidth + gap;
+                track.scrollBy({ left: direction * distance, behavior: 'smooth' });
+            }
+
+            prevBtn.addEventListener('click', () => scrollCarousel(-1));
+            nextBtn.addEventListener('click', () => scrollCarousel(1));
+        });
+    </script>
+    <script>
+        /* Gallery: shows 4 photos at a time. The button swaps in a new set. */
+        (function () {
+            /* each photo: [file name, theme, shape]  (p = tall photo, l = wide photo) */
+            const photos = [
+                ["42_d042", "play", "l"],
+                ["48_d101", "belly", "l"],
+                ["img_0238", "toy", "l"],
+                ["img_0262", "play", "l"],
+                ["img_0272", "belly", "l"],
+                ["img_0411", "belly", "p"],
+                ["img_0421", "smile", "p"],
+                ["img_0429", "snuggle", "p"],
+                ["img_0491", "nap", "l"],
+                ["img_0537", "play", "p"],
+                ["img_0633", "outside", "p"],
+                ["img_0715", "friends", "p"],
+                ["img_0748", "people", "l"],
+                ["img_0826", "puzzle", "p"],
+                ["img_0857", "play", "p"],
+                ["img_0879", "play", "l"],
+                ["img_0899", "snuggle", "p"],
+                ["img_0937", "nap", "l"],
+                ["img_1013", "smile", "p"],
+                ["img_1178", "belly", "p"],
+                ["img_1188", "outside", "p"],
+                ["img_1270", "snuggle", "p"],
+                ["img_1279", "toy", "p"],
+                ["img_1295", "friends", "l"],
+                ["img_1325", "friends", "p"],
+                ["img_1426", "people", "p"],
+                ["img_1517", "snuggle", "l"],
+                ["img_1573", "outside", "p"],
+                ["img_1659", "friends", "l"],
+                ["img_1675", "play", "l"],
+                ["img_1853", "play", "l"],
+                ["img_2095", "puzzle", "p"],
+                ["img_2145", "toy", "l"],
+                ["img_2150", "friends", "l"],
+                ["img_2155", "smile", "p"],
+                ["img_2186", "friends", "l"],
+                ["img_2254", "outside", "l"],
+                ["img_2260", "kisses", "l"],
+                ["img_2495", "toy", "l"],
+                ["img_2581", "puzzle", "l"],
+                ["img_2649", "nap", "l"],
+                ["img_2674", "snuggle", "l"],
+                ["img_3256", "smile", "p"],
+                ["img_3440", "kisses", "l"],
+                ["img_3464", "smile", "p"],
+                ["img_3594", "friends", "l"],
+                ["img_3617", "friends", "l"],
+                ["img_3758", "smile", "l"],
+                ["img_3828", "toy", "l"],
+                ["img_3856", "smile", "l"],
+                ["img_3928", "play", "l"],
+                ["img_4136", "nap", "p"],
+                ["img_4180", "cat", "p"],
+                ["img_4200", "puzzle", "l"],
+                ["img_4214", "snuggle", "l"],
+                ["img_4258", "play", "p"],
+                ["img_4264", "toy", "l"],
+                ["img_4309", "belly", "l"],
+                ["img_4434", "snuggle", "l"],
+                ["img_4671", "friends", "l"],
+                ["img_4722", "toy", "p"],
+                ["img_5200", "friends", "p"],
+                ["img_5638", "friends", "l"],
+                ["img_5645", "play", "p"],
+                ["img_5864", "smile", "p"],
+                ["img_5888", "friends", "l"],
+                ["img_5923", "snuggle", "p"],
+                ["img_6070", "nap", "l"],
+                ["img_6157", "smile", "p"],
+                ["img_6202", "snuggle", "l"],
+                ["img_6207", "smile", "p"],
+                ["img_6319", "people", "p"],
+                ["img_6768", "smile", "p"],
+                ["img_6805", "snuggle", "l"],
+                ["img_7008", "snuggle", "l"],
+                ["img_7136", "toy", "p"],
+                ["img_7230", "snuggle", "p"],
+                ["img_7346", "snuggle", "l"],
+                ["img_7370", "snuggle", "l"],
+                ["img_7426", "play", "l"],
+                ["img_7572", "puzzle", "l"],
+                ["img_7578", "snuggle", "l"],
+                ["img_7578-2", "snuggle", "p"],
+                ["img_7645", "friends", "p"],
+                ["img_7780", "friends", "l"],
+                ["img_7877", "snuggle", "l"],
+                ["img_8047", "snuggle", "l"],
+                ["img_8288", "outside", "l"],
+                ["img_8346", "friends", "l"],
+                ["img_8391", "toy", "p"],
+                ["img_8408", "snuggle", "l"],
+                ["img_8437", "outside", "l"],
+                ["img_8638", "snuggle", "l"],
+                ["img_8685", "snuggle", "l"],
+                ["img_8706", "toy", "l"],
+                ["img_8811", "snuggle", "l"],
+                ["img_8869", "snuggle", "p"],
+                ["img_8954", "belly", "p"],
+                ["img_8964", "outside", "l"],
+                ["img_9038", "play", "l"],
+                ["img_9134", "people", "l"],
+                ["img_9168", "smile", "l"],
+                ["img_9258", "snuggle", "l"],
+                ["img_9263", "people", "p"],
+                ["img_9377", "outside", "l"],
+                ["img_9402", "cat", "p"],
+                ["img_9791", "people", "l"],
+                ["img_9854", "friends", "p"],
+                ["img_9880", "snuggle", "l"],
+                ["img_9914", "snuggle", "l"]
+            ];
+
+            /* captions for each theme. Edit these words any time. */
+            const captions = {
+                toy: ['Every toy is the best toy.', 'This one is my favorite. So is that one.', 'Toy inspection in progress.'],
+                play: ['Playtime is serious business.', 'The best kind of chaos.', 'Best game ever.'],
+                friends: ['New friends, properly introduced.', 'Better together.', 'Friends make everything more fun.'],
+                snuggle: ['Free to play and snuggle.', 'Snuggles on request.', 'All the snuggles.', 'Cuddle break.'],
+                nap: ['Naps are part of the schedule.', 'Worn out from all the fun.', 'Dreaming of treats.'],
+                smile: ['That happy-to-be-here face.', 'Smiles all around.', 'Tail wags guaranteed.'],
+                outside: ['Sunshine and sniffs.', 'So many good smells.', 'Backyard adventures.'],
+                belly: ['Belly rubs, please.', 'Upside down is the right side up.'],
+                puzzle: ['Brain games count as playtime.', 'Snack detective at work.'],
+                cat: ['Purrfectly content.', 'Quiet company.'],
+                people: ['Part of the family.', 'Lots of love to go around.'],
+                kisses: ['Kisses included.', 'Sealed with a kiss.']
+            };
+
+            /* photo descriptions for screen readers */
+            const alts = {
+                toy: 'Dog with a favorite toy',
+                play: 'Dog in the middle of playtime',
+                friends: 'Dog friends hanging out together',
+                snuggle: 'Dog snuggling with a family member',
+                nap: 'Dog taking a cozy nap',
+                smile: 'Happy dog smiling at the camera',
+                outside: 'Dog enjoying time outside',
+                belly: 'Dog rolled over and being silly',
+                puzzle: 'Dog working on a treat puzzle',
+                cat: 'Cat relaxing at home',
+                people: 'Dog spending time with a family member',
+                kisses: 'Dog giving kisses'
+            };
+
+            const grid = document.getElementById('moments');
+            const button = document.getElementById('moments-shuffle');
+            const frames = grid.querySelectorAll('.moment');
+
+            function shuffle(list) {
+                for (let i = list.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [list[i], list[j]] = [list[j], list[i]];
+                }
+                return list;
+            }
+
+            /* two shuffled piles (tall and wide), so every photo shows once before any repeat */
+            const piles = { p: [], l: [] };
+
+            function nextPhoto(shape) {
+                if (piles[shape].length === 0) {
+                    piles[shape] = shuffle(photos.filter(photo => photo[2] === shape));
+                }
+                return piles[shape].pop();
+            }
+
+            function showNewSet() {
+                const picks = [nextPhoto('p'), nextPhoto('l'), nextPhoto('l'), nextPhoto('p')];
+                const used = [];
+
+                frames.forEach(function (frame, i) {
+                    const file = picks[i][0];
+                    const theme = picks[i][1];
+                    const fresh = captions[theme].filter(caption => !used.includes(caption));
+                    const choices = fresh.length ? fresh : captions[theme];
+                    const caption = choices[Math.floor(Math.random() * choices.length)];
+                    used.push(caption);
+
+                    const img = frame.querySelector('img');
+                    img.src = 'images/web/' + file + '.jpg';
+                    img.alt = alts[theme];
+                    frame.querySelector('figcaption').textContent = caption;
+                });
+            }
+
+            button.addEventListener('click', function () {
+                grid.classList.add('is-swapping');
+                setTimeout(function () {
+                    showNewSet();
+                    /* wait until the new photos have loaded, then fade them in */
+                    const loading = Array.from(grid.querySelectorAll('img')).map(function (img) {
+                        return img.decode().catch(function () { });
+                    });
+                    Promise.all(loading).then(function () {
+                        grid.classList.remove('is-swapping');
+                    });
+                }, 250);
+            });
+
+            /* click a photo to see it bigger. Click again (or press Escape) to close. */
+            const zoom = document.getElementById('moment-zoom');
+
+            function openZoom(frame) {
+                const img = frame.querySelector('img');
+                const bigImg = zoom.querySelector('img');
+                bigImg.src = img.src;
+                bigImg.alt = img.alt;
+                zoom.querySelector('figcaption').textContent = frame.querySelector('figcaption').textContent;
+                zoom.hidden = false;
+            }
+
+            function closeZoom() {
+                zoom.hidden = true;
+            }
+
+            frames.forEach(function (frame) {
+                frame.addEventListener('click', function () {
+                    openZoom(frame);
+                });
+                frame.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        openZoom(frame);
+                    }
+                });
+            });
+
+            zoom.addEventListener('click', closeZoom);
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeZoom();
+                }
+            });
+
+            showNewSet();
+        })();
+    </script>
 </body>
 
 </html>

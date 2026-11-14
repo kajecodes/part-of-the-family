@@ -144,28 +144,39 @@ a {
 /* Dark strip */
 .strip {
     background-color: var(--forest-green);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    flex-wrap: wrap;
-    gap: 16px 48px;
-    padding: 18px 48px;
+    row-gap: 16px;
+    padding: 24px max(48px, calc((100% - 1200px) / 2 + 48px));
 }
 
-.strip p {
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-number {
+    color: var(--cream);
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.stat-label {
     color: var(--cream);
     font-weight: bold;
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin: 0;
 }
 
-/* coral dot between items */
-.strip p+p::before {
-    content: "•";
-    color: var(--coral);
-    margin-right: 48px;
+/* coral divider between stats */
+.stat+.stat {
+    border-left: 2px solid var(--coral);
 }
 
 /* Services */
@@ -226,4 +237,673 @@ a {
     align-items: center;
     justify-content: center;
     color: var(--dark-green);
+}
+
+/* How We Got Started */
+.story {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 48px;
+}
+
+.story-card {
+    background-color: var(--warm-white);
+    border-radius: 24px;
+    padding: 48px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.story-card .section-heading {
+    margin-bottom: 20px;
+}
+
+.story-card p:last-child {
+    color: var(--dark-green);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* About / Meet the Family */
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 48px;
+}
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.family-member {
+    text-align: center;
+}
+
+.family-photo {
+    background-color: var(--mint);
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-green);
+}
+
+.family-member h3 {
+    margin: 0 0 8px;
+}
+
+.family-member p {
+    color: var(--body-text);
+    font-size: 0.95rem;
+}
+
+/* Brixie's dog-speak bio */
+.dog-speak summary {
+    color: var(--body-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.dog-speak summary::-webkit-details-marker {
+    display: none;
+}
+
+.dog-speak .translation-hint {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--coral);
+}
+
+.dog-speak .hint-close {
+    display: none;
+}
+
+.dog-speak[open] .hint-open {
+    display: none;
+}
+
+.dog-speak[open] .hint-close {
+    display: block;
+}
+
+.dog-speak p {
+    color: var(--body-text);
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+/* Reviews & Gallery carousel */
+.showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 48px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 8px 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    flex: 0 0 280px;
+    scroll-snap-align: center;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.review-card {
+    background-color: var(--warm-white);
+}
+
+.review-card .quote {
+    font-style: italic;
+    color: var(--dark-green);
+    margin: 0 0 12px;
+}
+
+.review-card .reviewer {
+    color: var(--body-text);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.photo-card {
+    padding: 0;
+}
+
+.photo-card .card-image {
+    min-height: 240px;
+    border-radius: 24px;
+}
+
+.carousel-arrow {
+    flex-shrink: 0;
+    background-color: var(--coral);
+    border: none;
+    color: var(--button-text);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--coral-dark);
+}
+
+/* Gallery: 4 snapshots with handwritten captions.
+   Each photo keeps its own shape, so nothing gets cut off. */
+.moments {
+    display: grid;
+    grid-template-columns: 1.28fr 1fr 1.28fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.moment {
+    margin: 0;
+    padding: 10px 10px 6px;
+    background-color: var(--warm-white);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(32, 49, 43, 0.18);
+    transition: opacity 0.25s, transform 0.25s;
+}
+
+/* height: auto lets the whole photo show, tall or wide */
+.moment img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+/* where each of the 4 photos sits, and a slight tilt on two of them */
+.moment-1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.moment-2 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    transform: rotate(-1.5deg);
+}
+
+.moment-3 {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+}
+
+.moment-4 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    transform: rotate(1.5deg);
+}
+
+/* the caption sits under the photo in a handwriting font */
+.moment figcaption {
+    padding-top: 6px;
+    font-family: 'Caveat', 'Bradley Hand', cursive;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    color: var(--dark-green);
+    text-align: center;
+}
+
+/* Click a photo to see it bigger. The big copy floats on top of the page,
+   and the four photos stay where they are underneath. */
+.moments .moment {
+    cursor: zoom-in;
+}
+
+.moment-zoom {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: rgba(32, 49, 43, 0.6);
+    cursor: zoom-out;
+}
+
+.moment-zoom[hidden] {
+    display: none;
+}
+
+.moment-big {
+    width: fit-content;
+    max-width: min(92vw, 760px);
+    animation: moment-grow 0.25s ease-out;
+}
+
+.moment-big img {
+    width: auto;
+    max-width: 100%;
+    max-height: 72vh;
+}
+
+.moment-big figcaption {
+    font-size: 2rem;
+}
+
+/* the big photo starts small and grows into place */
+@keyframes moment-grow {
+    from {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.moment-zoom-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--warm-white);
+    color: var(--dark-green);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* the quick fade when the button swaps in new photos */
+.moments.is-swapping .moment {
+    opacity: 0;
+    transform: scale(0.96);
+}
+
+.moments-actions {
+    margin-top: 32px;
+    text-align: center;
+}
+
+button.btn {
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contact */
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 48px;
+    text-align: center;
+}
+
+.contact .section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card {
+    background-color: var(--mint);
+    border-radius: 24px;
+    padding: 48px;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.contact-card p {
+    color: var(--dark-green);
+    font-size: 1.1rem;
+    margin: 0 0 24px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    border-top: 1px solid rgba(32, 49, 43, 0.12);
+    padding: 28px max(48px, calc((100% - 1200px) / 2 + 48px));
+}
+
+footer p {
+    color: var(--body-text);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* the paw print is drawn with code (an SVG), so it stays sharp at any size */
+.footer-paw {
+    width: 40px;
+    height: 40px;
+    fill: var(--coral);
+}
+
+.footer-name {
+    display: block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: var(--dark-green);
+}
+
+.footer-tag {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+
+/* Photos
+   object-fit: cover fills the box and trims the edges, so photos never stretch.
+   object-position chooses which part of the photo stays in view. */
+/* Hero photo: arch shape with a white frame, and a yellow blob behind it */
+.hero-art {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+/* the blob: an empty shape drawn by CSS, sitting behind the photo */
+.hero-art::before {
+    content: "";
+    position: absolute;
+    right: -12%;
+    top: -5%;
+    width: 85%;
+    height: 80%;
+    background-color: var(--yellow);
+    border-radius: 58% 42% 55% 45% / 50% 55% 45% 50%;
+}
+
+img.hero-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 25%;
+    border: 10px solid var(--warm-white);
+    border-radius: 999px 999px 24px 24px;
+    box-shadow: 0 20px 40px rgba(32, 49, 43, 0.15);
+}
+
+img.card-image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.photo-card img.card-image {
+    height: 280px;
+}
+
+img.family-photo {
+    display: block;
+    object-fit: cover;
+}
+
+.family-photo-kirsten {
+    object-position: 10% center;
+}
+
+.family-photo-mylo {
+    object-position: 40% center;
+}
+
+.family-photo-matt {
+    object-position: center 35%;
+}
+
+.family-photo-brixie {
+    object-position: center 40%;
+}
+
+/* Service cards: curved photo, number, icon, outline and solid shadow */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    border: 1.5px solid var(--dark-green);
+    box-shadow: 5px 6px 0 var(--dark-green);
+}
+
+.card-coral {
+    background-color: var(--coral);
+}
+
+/* the photo sits in the top left corner, with one big curved corner */
+.card img.card-image {
+    width: 80%;
+    height: 190px;
+    border-radius: 0 14px 90px 0;
+}
+
+.card-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid var(--dark-green);
+    border-radius: 50%;
+}
+
+.card-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: var(--dark-green);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid rgba(32, 49, 43, 0.35);
+}
+
+/* How We Got Started: photo beside the story */
+.story-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 960px;
+    text-align: left;
+}
+
+.story-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* ---- Mobile rules ----
+   Below this screen width, the browser uses these rules instead of
+   (or in addition to) the ones above, so the layout stacks nicely on phones. */
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px 24px;
+    }
+
+    .site-header nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .strip {
+        padding: 18px 24px;
+    }
+
+    .story {
+        padding: 24px;
+    }
+
+    .story-card {
+        padding: 32px 24px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .story-photo {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .hero-art {
+        max-width: 300px;
+        margin-bottom: 16px;
+    }
+
+    .hero-art::before {
+        right: -6%;
+    }
+
+    .story-card h2 {
+        font-size: 1.9rem;
+    }
+
+    .services,
+    .about,
+    .showcase,
+    .contact {
+        padding: 48px 24px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 32px 24px;
+    }
+
+    /* on a phone: the two tall photos on top, the two wide photos below */
+    .moments {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .moments .moment {
+        grid-column: auto;
+        grid-row: auto;
+        align-self: center;
+        padding: 7px 7px 4px;
+    }
+
+    .moment-4 {
+        order: 2;
+    }
+
+    .moment-2 {
+        order: 3;
+    }
+
+    .moment-3 {
+        order: 4;
+    }
+
+    .moment figcaption {
+        font-size: 1.15rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 28px 24px;
+    }
 }
