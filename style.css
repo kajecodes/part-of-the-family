@@ -777,6 +777,63 @@ img.family-photo {
     border-top: 1px solid rgba(32, 49, 43, 0.35);
 }
 
+/* Meet the Family: dark green panel with light text */
+.about-panel {
+    background-color: var(--forest-green);
+    border-radius: 28px;
+    padding: 56px 48px;
+}
+
+.about-panel .eyebrow {
+    color: var(--coral);
+}
+
+.about-panel h2,
+.about-panel h3 {
+    color: var(--cream);
+}
+
+.about-panel .family-member p,
+.about-panel .dog-speak summary,
+.about-panel .dog-speak p {
+    color: rgba(248, 242, 232, 0.88);
+}
+
+.about-panel img.family-photo {
+    width: 180px;
+    height: 180px;
+    border: 5px solid var(--warm-white);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Review cards: outline and solid shadow, stars, and a big quotation mark */
+.review-card {
+    border: 1.5px solid var(--dark-green);
+    box-shadow: 5px 6px 0 var(--dark-green);
+}
+
+.review-card::before {
+    content: "\201C";
+    display: block;
+    height: 34px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--coral);
+}
+
+.review-card .stars {
+    margin: 0 0 8px;
+    color: #dba93a;
+    letter-spacing: 0.15em;
+}
+
+/* room around the cards so their shadows are not cut off */
+.carousel-track {
+    padding: 8px 10px 16px 2px;
+}
+
 /* How We Got Started: photo beside the story */
 .story-card {
     display: grid;
@@ -869,6 +926,11 @@ img.family-photo {
 
     .contact-card {
         padding: 32px 24px;
+    }
+
+    .about-panel {
+        padding: 40px 24px;
+        border-radius: 24px;
     }
 
     /* on a phone: the two tall photos on top, the two wide photos below */
